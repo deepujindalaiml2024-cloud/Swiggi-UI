@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy UI Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons for Cart & Search visual indicators -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+          <span class="logo-text">Swiggy</span>
+        </div>
+        <div class="location-picker">
+          <span class="location-title"><i class="fa-solid fa-location-dot"></i> Setup Location</span>
+          <span class="location-address">Meerut, Uttar Pradesh, India</span>
+          <i class="fa-solid fa-chevron-down arrow-icon"></i>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Search for restaurants, cuisine or a dish...">
+      </div>
+
+      <div class="nav-right">
+        <button class="nav-btn"><i class="fa-regular fa-user"></i> Sign In</button>
+        <button class="nav-btn cart-btn">
+          <i class="fa-solid fa-cart-shopping"></i> Cart
+          <span class="cart-badge">2</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="main-banner">
+      <div class="banner-content">
+        <span class="banner-tag">Hungry?</span>
+        <h1>Order Food From Your Favorite Restaurants</h1>
+        <p>Get instant discounts up to 50% OFF with lightning-fast delivery to your doorstep.</p>
+        <a href="#restaurants" class="btn-primary">Order Now</a>
+      </div>
+      <div class="banner-image">
+        <div class="food-badge">50% OFF</div>
+      </div>
+    </section>
+
+    <section class="promo-section">
+      <div class="promo-card food-delivery">
+        <div class="promo-text">
+          <h3>FOOD DELIVERY</h3>
+          <p>FROM RESTAURANTS</p>
+          <span class="promo-discount">UPTO 60% OFF</span>
+        </div>
+        <div class="promo-icon"><i class="fa-solid fa-burger"></i></div>
+      </div>
+
+      <div class="promo-card dining-out">
+        <div class="promo-text">
+          <h3>DINE OUT</h3>
+          <p>EAT AT RESTAURANTS</p>
+          <span class="promo-discount">UPTO 40% OFF</span>
+        </div>
+        <div class="promo-icon"><i class="fa-solid fa-wine-glass"></i></div>
+      </div>
+
+      <div class="promo-card instamart">
+        <div class="promo-text">
+          <h3>INSTAMART</h3>
+          <p>INSTANT GROCERIES</p>
+          <span class="promo-discount">DELIVERY IN 10 MINS</span>
+        </div>
+        <div class="promo-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+      </div>
+    </section>
+
+    <section class="categories-section">
+      <h2 class="section-title">What's on your mind?</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-img pizza">🍕</div>
+          <span>Pizza</span>
+        </div>
+        <div class="category-card">
+          <div class="category-img burger">🍔</div>
+          <span>Burger</span>
+        </div>
+        <div class="category-card">
+          <div class="category-img biryani">🍛</div>
+          <span>Biryani</span>
+        </div>
+        <div class="category-card">
+          <div class="category-img chinese">🍜</div>
+          <span>Chinese</span>
+        </div>
+        <div class="category-card">
+          <div class="category-img desserts">🍨</div>
+          <span>Desserts</span>
+        </div>
+        <div class="category-card">
+          <div class="category-img thali">🥘</div>
+          <span>North Indian</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="restaurants">
+      <h2 class="section-title">Top restaurant chains in your area</h2>
+      <div class="products-grid">
+        
+        <article class="restaurant-card">
+          <div class="card-image pizza-img">
+            <span class="offer-tag">50% OFF UPTO ₹100</span>
+          </div>
+          <div class="card-info">
+            <h3 class="restaurant-name">Domino's Pizza</h3>
+            <div class="card-meta">
+              <span class="rating"><i class="fa-solid fa-star"></i> 4.3</span>
+              <span class="delivery-time">• 25-30 mins</span>
+            </div>
+            <p class="cuisines">Pizzas, Italian, Pastas, Desserts</p>
+            <p class="location-name">Central Market</p>
+          </div>
+        </article>
+
+        <article class="restaurant-card">
+          <div class="card-image burger-img">
+            <span class="offer-tag">₹125 OFF ABOVE ₹299</span>
+          </div>
+          <div class="card-info">
+            <h3 class="restaurant-name">Burger King</h3>
+            <div class="card-meta">
+              <span class="rating"><i class="fa-solid fa-star"></i> 4.2</span>
+              <span class="delivery-time">• 20-25 mins</span>
+            </div>
+            <p class="cuisines">Burgers, American, Fast Food</p>
+            <p class="location-name">PVS Mall</p>
+          </div>
+        </article>
+
+        <article class="restaurant-card">
+          <div class="card-image biryani-img">
+            <span class="offer-tag">60% OFF UPTO ₹120</span>
+          </div>
+          <div class="card-info">
+            <h3 class="restaurant-name">Behrouz Biryani</h3>
+            <div class="card-meta">
+              <span class="rating"><i class="fa-solid fa-star"></i> 4.5</span>
+              <span class="delivery-time">• 30-35 mins</span>
+            </div>
+            <p class="cuisines">Biryani, Kebabs, Mughlai</p>
+            <p class="location-name">Shastri Nagar</p>
+          </div>
+        </article>
+
+        <article class="restaurant-card">
+          <div class="card-image chinese-img">
+            <span class="offer-tag">20% OFF ALL ORDERS</span>
+          </div>
+          <div class="card-info">
+            <h3 class="restaurant-name">Mainland China</h3>
+            <div class="card-meta">
+              <span class="rating"><i class="fa-solid fa-star"></i> 4.1</span>
+              <span class="delivery-time">• 35-40 mins</span>
+            </div>
+            <p class="cuisines">Chinese, Asian, Noodles</p>
+            <p class="location-name">Supertech Shopprix</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <i class="fa-solid fa-utensils"></i> Swiggy
+        </div>
+        <p class="copyright">© 2026 Swiggy Limited</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Swiggy Corporate</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Partner with us</a></li>
+          <li><a href="#">Ride with us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Available in</h4>
+        <ul>
+          <li><a href="#">Bangalore</a></li>
+          <li><a href="#">Gurgaon</a></li>
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Delhi</a></li>
+          <li><a href="#">Mumbai</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Social Links</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
